@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple</title>
+</head>
+<body>
+<h1>Hello!!!</h1>
+<script>
+    function palindrome() {
+        var simpleNumbers = [],
+//            multiplies = [],
+            multiplyNumbers,
+//            m1 =[],
+//            m2 =[],
+            num1,
+            num2,
+            palindromeNumbers = [],
+            maxPalindrome = 0;
+        for (var i = 30000; i <= 99999; i++)
+        {
+            for (var j = 2; j <= i; j++)
+            {
+                if(i % j === 0) break;
+            }
+            if(j === i)
+            {
+                simpleNumbers.push(i);
+            }
+        }
+        var simple_numbers = simpleNumbers.slice();
+        for (var n = 0; n <= simpleNumbers.length - 1; n++)
+        {
+            for (var m = 0; m <= simple_numbers.length - 1; m++)
+            {
+                multiplyNumbers = simpleNumbers[n] * simple_numbers[m];
+//                multiplies.push(multiplyNumbers);
+                var word = String(multiplyNumbers);
+                var reverse_word = word.split('').reverse().join('');
+                if(word === reverse_word)
+                {
+                    palindromeNumbers.push(Number(word));
+//                    m1.push(simpleNumbers[n]);
+//                    m2.push(simple_numbers[m]);
+                    if(maxPalindrome < Number(word))
+                    {
+                        maxPalindrome = Number(word);
+                        num1 = simpleNumbers[n];
+                        num2 = simple_numbers[m];
+                    }
+                }
+            }
+        }
+//        console.log("Прості числа " + simpleNumbers);
+//        console.log(multiplies);
+//        console.log("Паліндроми " + palindromeNumbers);
+        console.log("Максимальний паліндром " + maxPalindrome);
+//        console.log(m1);
+//        console.log(m2);
+        console.log("Множники: " +num1 + " і " + num2);
+    }
+    palindrome();
+</script>
+
+</body>
+</html>
