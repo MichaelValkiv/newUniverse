@@ -1,0 +1,2034 @@
+/*Global*/
+@font-face
+{
+    font-family: Monda;
+    src: url('/newUniverse/fonts/monda/mondabold.ttf') format('truetype'),
+    url('/newUniverse/fonts/monda/mondabold.woff') format('woff'),
+    url('/newUniverse/fonts/monda/mondabold.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: Prime;
+    src: url('/newUniverse/fonts/prime/primeregular.ttf') format('truetype'),
+    url('/newUniverse/fonts/prime/primeregular.woff') format('woff'),
+    url('/newUniverse/fonts/prime/primeregular.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: MSGothic;
+    src: url('/newUniverse/fonts/msGothic/MS Gothic.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: LithosPro;
+    src: url('/newUniverse/fonts/lithosPro/lithos_pro_black.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: EuroFont;
+    src: url('/newUniverse/fonts/euroFont/EurofontExtendedC.otf') format('opentype');
+}
+@font-face
+{
+    font-family: Play;
+    src: url('/newUniverse/fonts/play/Play-Regular.ttf') format('truetype');
+}
+.bodyStyle
+{
+    overflow: hidden;
+}
+.boxSizingStyle, .i-i-item a, .imageAndCaption > img, .infoNav a
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.boxSizingStyle2
+{
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;;
+    -webkit-box-sizing: content-box;;
+}
+.arrow, .dLabel, .aLabel, .items, .siteTitle, .thisObjectTitle, .labels label, .boxTitle, .infoNav a
+{
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+h3
+{
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 5px 0;
+}
+h4, h5
+{
+    letter-spacing: 1px;
+}
+q
+{
+    margin-left: 100px;
+    padding: 10px;
+    display: block;
+}
+blockquote
+{
+    padding: 10px;
+}
+.key_word
+{
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.i-header, .i-footer
+{
+    width: 100%;
+}
+.boxTitle
+{
+    width: 100%;
+    font-family: Prime, Play;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    cursor: default;
+}
+.transitionBox, .labelsForTabs, .sortTable tr, .sortTable td, .sortTable th, .navigationList li, .navigationList li a, .otherObjects a,
+.siteTitle a, .imageAndCaption figcaption, .infoNav a
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.siteButtons
+{
+    width: 250px;
+}
+.styleSelector
+{
+    width: 250px;
+    float: right;
+}
+.titleBox
+{
+    width: 100%;
+    font-family: Prime, Play;
+}
+.hiddenNav
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.hiddenNav2
+{
+    display: none;
+    z-index: 1;
+}
+.hiddenNavList
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.hiddenNavList2
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.hiddenMainLink
+{
+    height: 100%;
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+}
+.hiddenMainLink > label
+{
+    cursor: pointer;
+}
+.hiddenMainLink2
+{
+    height: 100%;
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+}
+.hiddenTitle
+{
+    display: block;
+    font-family: LithosPro, EuroFont;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.hiddenTitle2
+{
+    display: block;
+    font-family: LithosPro, EuroFont;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.hiddenLink
+{
+    text-decoration: none;
+    font-family: Prime, Play;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    padding: 10px;
+}
+.hiddenLink2
+{
+    text-decoration: none;
+    font-family: Prime, Play;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    padding: 10px;
+}
+.hiddenStyle
+{
+    padding: 10px;
+}
+.t_upper
+{
+    width: 100%;
+    height: 40px;
+    display: table;
+    padding: 0 15px 0 5px;
+    z-index: 1;
+}
+.t_upperFixed
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.t_middle
+{
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+.t_lower
+{
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+}
+.t_u_navigation
+{
+    width: 20%;
+    display: table-cell;
+    vertical-align: middle;
+}
+#navShowBtn, #navCloseBtn
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    margin-top: 5px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#navShowBtn:hover, #navCloseBtn:hover
+{
+    opacity: .35;
+}
+#navCloseBtn
+{
+    margin-left: -4px;
+}
+.line3
+{
+    width: 22px;
+    height: 3px;
+}
+.line3:not(:first-child)
+{
+    margin-top: 5px;
+}
+.line2
+{
+    width: 27px;
+    height: 3px;
+}
+#line2Upper
+{
+    margin-top: 8px;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+#line2Lower
+{
+    margin-top: -3px;
+    transform-origin: 50% 50%;
+    transform: rotate(315deg);
+}
+.t_u_style
+{
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dLabel, .aLabel, .sLabel
+{
+    text-transform: lowercase;
+    cursor: pointer;
+}
+.radioB, .fontSwitcher
+{
+    display: inline-block;
+    width: 40px;
+    height: 17px;
+    padding: 1px;
+    margin: auto;
+    border-radius: 2px;
+    position: relative;
+}
+.checkedStyle, .f_s
+{
+    width: 11px;
+    height: 11px;
+    border-radius: 1px;
+    position: absolute;
+}
+.default_f_s
+{
+    right: 1px;
+}
+.t_m_title
+{
+    width: calc(25% - 50px);
+    height: 50px;
+    float: left;
+    font-size: 40px;
+    font-family: LithosPro, EuroFont;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+}
+.t_m_title a
+{
+    text-decoration: none;
+    outline: none;
+}
+.t_m_
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.t_m_nav
+{
+    width: 75%;
+    height: 50px;
+    float: right;
+}
+.navigationList
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.navigationList li a:after
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.navigationList > li
+{
+    display: inline-block;
+    list-style: none;
+    line-height: 45px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.mainLink a
+{
+    text-decoration: none;
+    font-family: Prime, Play;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    outline: none;
+}
+.aLink
+{
+    text-transform: uppercase;
+}
+.mainLink > a:after
+{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 33px;
+    left: 0;
+}
+.mainLink a:hover:after
+{
+    width: 100%;
+}
+#default_css, #alternate_css, #standard_css,
+#default_font, #alternate_font, #standard_font
+{
+    display: none;
+}
+.objectsButton a
+{
+    font-weight: bold;
+    display: block;
+    height: 45px;
+    text-decoration: none;
+}
+.objectsButton a:after
+{
+    height: 0;
+}
+.lineNav
+{
+    overflow: hidden;
+    z-index: 3;
+}
+.lineNavS
+{
+    position: fixed;
+    height: 130px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top: none;
+}
+.labels
+{
+    width: 20%;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+}
+.searchBox
+{
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+    font-family: Prime, Play;
+}
+.searchBox table
+{
+    width: 100%;
+    height: 100%;
+}
+.searchBox table td.searchTD
+{
+    vertical-align: middle;
+    text-align: right;
+    width: 50%;
+}
+.searchBox table td.langTD
+{
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 10px;
+    width: 50%;
+}
+.searchCont
+{
+    width: 350px;
+    overflow: hidden;
+    float: right;
+    padding: 10px;
+}
+.sField
+{
+    float: right;
+    width: 250px;
+    height: 35px;
+    font-family: Prime, Play;
+    font-size: 16px;
+    border-radius: 5px 0 0 0;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+.sBtn
+{
+    width: 100px;
+    height: 35px;
+    float: right;
+    font-family: Prime, Play;
+    font-size: 16px;
+    border-radius: 0 0 5px 0;
+    border-left: none;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.sRes
+{
+    float: left;
+    display: none;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 5px 0;
+    text-align: center;
+    position: absolute;
+    top: 48px;
+    z-index: 1;
+}
+.sRes li a
+{
+    display: block;
+    padding: 5px 0;
+}
+.t_u_lang
+{
+    font-family: EuroFont;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.ukr, .eng
+{
+    width: 50px;
+    padding: 3px;
+    text-align: center;
+}
+.ukr
+{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.eng
+{
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.ukr_link, .eng_link
+{
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    display: block;
+    padding: 2px 4px;
+}
+.colorSwitcher
+{
+    width: 40px;
+    height: 17px;
+    padding: 1px;
+    float: right;
+    border: 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.colorSwitcher > div
+{
+    width: 11px;
+    height: 11px;
+    right: 24px;
+    border-radius: 1px;
+    position: absolute;
+}
+.labels label
+{
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+#font1, #font2, #font3, #font4, #font5
+{
+    display: none;
+}
+.imageAndCaption figcaption
+{
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+    padding: 15px 10px 15px 10px;
+}
+.tBox
+{
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.footerBox
+{
+    width: 100%;
+    font-family: Prime, Play;
+}
+.f_upper
+{
+    width: 100%;
+    height: 50px;
+}
+.f_middle
+{
+    width: 100%;
+    height: 50px;
+}
+.f_lower
+{
+    width: 100%;
+    height: 50px;
+}
+.f_m_left, .f_m_right, .f_m_
+{
+    height: 50px;
+}
+.f_m_left
+{
+    width: calc(75% - 50px);
+    float: left;
+    font-size: 16px;
+    padding: 3px 10px;
+}
+.f_m_
+{
+    width: 50px;
+    float: left;
+}
+.f_m_right
+{
+    width: 25%;
+    float: right;
+    font-size: 40px;
+    font-family: LithosPro, EuroFont;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+}
+.f_m_right a
+{
+    text-decoration: none;
+    outline: none;
+}
+.i_c_desc
+{
+    width: 50%;
+    float: right;
+    margin-left: 15px;
+}
+.i_c_desc1
+{
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.i_desc
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.i_desc img
+{
+    display: block;
+}
+.c_desc
+{
+    width: 100%;
+    padding: 10px;
+}
+.table_desc
+{
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+.table_desc th
+{
+    border: 1px solid;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+.table_desc td
+{
+    border: 1px solid;
+    padding: 15px;
+}
+
+
+/*Object*/
+.o-cont
+{
+    overflow: hidden;
+}
+.tBox
+{
+    position: relative;
+}
+.bodyStyleButton
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 1px 3px;
+    cursor: pointer;
+}
+#navShowBtn, #navCloseBtn
+{
+    visibility: visible;
+}
+.thisObjectTitle
+{
+    width: 100%;
+    font-size: 48px;
+    font-family: EuroFont;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    margin: 15px 0 15px -100%;
+}
+.sameTypeObjects
+{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 28px;
+    position: relative;
+}
+.sTO
+{
+    width: 300%;
+    overflow: hidden;
+}
+.sTO_left, .sTO_right
+{
+    width: 50px;
+    position: absolute;
+    font-family: MSGothic;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sTO_left
+{
+    top: 0;
+    bottom: 25px;
+    left: 3px;
+}
+.sTO_right
+{
+    top: 0;
+    bottom: 25px;
+    right: 3px;
+}
+.sTO_radio
+{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 2px;
+}
+.sTO_radio > input
+{
+    display: none;
+}
+.sTO_fake_radio
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.fr
+{
+    width: 9px;
+    height: 9px;
+}
+.fr1
+{
+    opacity: 1;
+}
+.fr2, .fr3
+{
+    opacity: 0;
+}
+.otherObjImage
+{
+    width: 6.66666666667%;
+    float: left;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.otherObjImg
+{
+    border: 2px solid transparent;
+}
+.otherObjImage img
+{
+    display: block;
+}
+.objInfo
+{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*border: 1px solid red;*/
+    font-family: Prime, Play;
+    text-align: justify;
+}
+.object_i_p
+{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+.objectImage, .objectProp
+{
+    width: 50%;
+}
+.objectImage
+{
+    margin-right: 15px;
+}
+.o_picture
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.o_picture > img
+{
+    display: block;
+}
+.o_caption
+{
+    text-align: right;
+    padding: 10px;
+}
+.objectProp
+{
+    padding: 10px;
+}
+.allProp
+{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+    height: 100%;
+}
+.allProp tr
+{
+    margin-bottom: 5px;
+}
+.allProp td
+{
+    vertical-align: middle;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.allProp td:nth-of-type(odd)
+{
+    width: 12%;
+    text-align: right;
+    font-weight: bold;
+}
+.allProp td:nth-of-type(even)
+{
+    width: 21.33333%;
+    text-align: left;
+}
+.objectObjects
+{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.minorObj
+{
+    width: calc(12.5% - 4px);
+    text-align: center;
+    cursor: default;
+    margin: 2px;
+}
+.minorObj a
+{
+    display: block;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    border: 1px solid #008000;
+}
+.minorObj span
+{
+    display: block;
+    padding: 10px 0 10px 0;
+    position: relative;
+    border: 1px solid #ff0000;
+}
+.minorObj b
+{
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.minorObj a:hover:after, .minorObj span:hover:after
+{
+    width: 0;
+}
+.minorObj a:hover, .minorObj a:focus
+{
+    background: #0e4900;
+    background: -moz-linear-gradient(top, #0e4900 0%, #199e2d 50%, #0e4900 100%);
+    background: -webkit-linear-gradient(top, #0e4900 0%,#199e2d 50%,#0e4900 100%);
+    background: linear-gradient(to bottom, #0e4900 0%,#199e2d 50%,#0e4900 100%);
+}
+.minorObj:hover
+{
+    background: #c10000;
+    background: -moz-linear-gradient(top, #c10000 0%, #f75d27 50%, #c10000 100%);
+    background: -webkit-linear-gradient(top, #c10000 0%,#f75d27 50%,#c10000 100%);
+    background: linear-gradient(to bottom, #c10000 0%,#f75d27 50%,#c10000 100%);
+}
+.objectDesc
+{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.ch_ab
+{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+.abbreviationBox
+{
+    width: 50%;
+    height: 100vh;
+    padding: 10px;
+    font-family: Prime, Play;
+    font-size: 20px;
+}
+.characteristicsBox
+{
+    width: 50%;
+    height: 100vh;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: Prime, Play;
+    font-size: 20px;
+    overflow: hidden;
+}
+.characteristics
+{
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+.ch_title
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.ch_s_d
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    display: none;
+}
+.abbreviation
+{
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.otherObjImg
+{
+    width: 100%;
+}
+
+/*Information*/
+.chosenAnchor
+{
+    text-transform: uppercase;
+    background-color: rgba(255, 0, 0, .7);
+}
+.thisTypeObjects
+{
+    height: calc(100vh - 90px);
+    width: 100%;
+    position: fixed;
+    top: 90px;
+    z-index: 3;
+    overflow: auto;
+    display: none;
+    font-family: Prime, Play;
+    font-weight: bold;
+}
+.objectForm
+{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iCheckbox
+{
+    display: none;
+}
+.objectBox
+{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 15px 15px 0 15px;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.s-obj
+{
+    width: calc(20% - 30px);
+    float: left;
+    margin: 0 15px 15px 15px;
+}
+.s-img
+{
+    position: relative;
+}
+.s-img img
+{
+    cursor: pointer;
+    display: block;
+}
+.s-inf
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+.s-obj:hover .s-inf
+{
+    display: block;
+}
+.s-title
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 50%;
+    position: relative;
+}
+.s-button
+{
+    height: 50%;
+}
+.s-class
+{
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    border: 1px solid;
+    padding: 1px 3px;
+}
+.s-button a
+{
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+.s-title, .s-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infoObjectTabs
+{
+    float: left;
+    margin: 0 5px;
+    padding: 5px 10px;
+    user-select: none;
+}
+.infoContent
+{
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 7px;
+    font-family: Prime, Play;
+    display: flex;
+    flex-wrap: wrap;
+}
+.iCont
+{
+    overflow: hidden;
+}
+.infoObjInfo
+{
+    width: calc(33.33333% - 14px);
+    margin: 7px;
+}
+.infoObjImgLink, .infoObjCaption
+{
+    padding: 10px;
+}
+.infoObjImgLink
+{
+    position: relative;
+    cursor: pointer;
+}
+.infoObjImgLink > img
+{
+    display: block;
+}
+.infoSlider
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 80px;
+}
+.infoSlider > table
+{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+.infoSlider > table td
+{
+    width: 50%;
+    height: 50%;
+}
+.infoSlider > table td.titleCell
+{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    vertical-align: bottom;
+    padding: 10px 0;
+}
+.infoSlider > table td.infoCell
+{
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.infoObjImgLink img
+{
+    display: block;
+}
+.infoObjHiddenBox
+{
+    padding-top: 10px;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 0px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.hiddenFontSelector
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: default;
+}
+.hiddenFontSelector > label
+{
+    cursor: pointer;
+}
+.infoObjTitle
+{
+    font-family: EuroFont;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    position: relative;
+}
+.img_caption
+{
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    float: left;
+}
+.infoObjImg
+{
+    width: 100%;
+}
+.infoObjImg img
+{
+    display: block;
+}
+.infoObjCaption
+{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: right;
+}
+.infoObjDesc
+{
+    text-align: justify;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.infoObjDesc a
+{
+    font-style: italic;
+    text-decoration: none;
+}
+.infoObjDesc a:hover
+{
+    text-decoration: underline;
+}
+.infoObjDesc ul
+{
+    list-style-type: square;
+}
+.infoObjClose
+{
+    width: 50px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+.infoObjInfo ol
+{
+    text-align: center;
+}
+.hideTable
+{
+    display: none;
+}
+.iCheckboxLabel
+{
+    cursor: pointer;
+}
+.redColor
+{
+    color: red;
+}
+.grayBox
+{
+    width: 100%;
+    height: calc(100vh - 325px);
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sortOptions
+{
+    font-size: 0;
+    font-family: Prime, Play;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+.sortOptions > input[type=radio]
+{
+    display: none;
+}
+.sortOptions > label
+{
+    display: inline-block;
+    width: 7.14285714285714285%;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.sortOptions > label > div
+{
+    width: 40px;
+    height: 17px;
+    padding: 1px;
+    border-radius: 2px;
+    position: relative;
+    margin: auto;
+}
+.sortOptions > label > div > div
+{
+    width: 11px;
+    height: 11px;
+    border-radius: 1px;
+    position: absolute;
+}
+.sortBtn
+{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 30px auto 0 auto;
+    width: 125px;
+    padding: 10px;
+    cursor: pointer;
+}
+#sortResult_planets,
+#sortResult_satellites,
+#sortResult_stars,
+#sortResult_galaxies,
+#sortResult_constellations
+{
+    display: none;
+    opacity: 0;
+}
+#sortResult_planets.withData,
+#sortResult_satellites.withData,
+#sortResult_stars.withData,
+#sortResult_galaxies.withData,
+#sortResult_constellations.withData
+{
+    display: block;
+}
+#sortResult_planets.showData,
+#sortResult_satellites.showData,
+#sortResult_stars.showData,
+#sortResult_galaxies.showData,
+#sortResult_constellations.showData
+{
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+.hiddenTable
+{
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 56px;
+    font-size: 18px;
+    font-family: Prime, Play;
+    letter-spacing: 1px;
+    text-align: center;
+    border-spacing: 0;
+}
+.hiddenTable th
+{
+    padding: 10px 5px;
+}
+.t-cont
+{
+    margin: 15px 0;
+    font-size: 0;
+}
+.tCont
+{
+    overflow: hidden;
+}
+.allTabs
+{
+    display: none;
+}
+.labelsForTabs
+{
+    width: 20%;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Prime, Play;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+}
+.tablesTab
+{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.allTabs:nth-of-type(1):checked ~ div:nth-of-type(1),
+.allTabs:nth-of-type(2):checked ~ div:nth-of-type(2),
+.allTabs:nth-of-type(3):checked ~ div:nth-of-type(3),
+.allTabs:nth-of-type(4):checked ~ div:nth-of-type(4),
+.allTabs:nth-of-type(5):checked ~ div:nth-of-type(5)
+{
+    display: block;
+}
+.sortTable
+{
+    width: 100%;
+    font-size: 18px;
+    font-family: Prime, Play;
+    letter-spacing: 1px;
+    text-align: center;
+    border-spacing: 0 15px;
+}
+.sortTable th
+{
+    padding: 10px 5px;
+}
+.sortTable td > img
+{
+    display: block;
+}
+.sortTable a
+{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.sortTable a:hover
+{
+    text-decoration: underline;
+}
+.sortTable.sortPlanets th, .sortTable.sortPlanets td
+{
+    width: 14.2857142857%;
+}
+.sortTable.sortSatellites th, .sortTable.sortSatellites td
+{
+    width: 14.2857142857%;
+}
+.sortTable.sortStars th, .sortTable.sortStars td,
+.sortTable.sortConstellations th, .sortTable.sortConstellations td
+{
+    width: 12.5%;
+}
+.sortTable.sortGalaxies th, .sortTable.sortGalaxies td
+{
+    width: 16.6666666666667%;
+}
+.sortTable td img
+{
+    display: block;
+    margin: auto;
+}
+
+/*Index*/
+.lineNav
+{
+    display: none;
+}
+.i-cont
+{
+    width: 400%;
+    height: calc(100% - 201px);
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+.i-item
+{
+    width: 25%;
+    height: 100%;
+    border-top: 1px solid #000000;
+    float: left;
+}
+.arrow
+{
+    font-size: 48px;
+    font-family: MSGothic;
+    font-weight: bold;
+    z-index: 2;
+    cursor: pointer;
+}
+#leftArrow
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-left: 15px;
+}
+#rightArrow
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-right: 15px;
+}
+#leftArrow:active
+{
+    animation: leftA .85s ease infinite;
+    -webkit-animation: leftA .85s ease infinite;
+}
+@keyframes leftA
+{
+    0% {padding-left: 10px;}
+    50% {padding-left: 5px;}
+    100% {padding-left: 15px;}
+}
+@-webkit-keyframes leftA
+{
+    0% {padding-left: 10px;}
+    50% {padding-left: 5px;}
+    100% {padding-left: 15px;}
+}
+#rightArrow:active
+{
+    animation: rightA .85s ease infinite;
+    -webkit-animation: rightA .85s ease infinite;
+}
+@keyframes rightA
+{
+    0% {padding-right: 10px;}
+    50% {padding-right: 5px;}
+    100% {padding-right: 15px;}
+}
+@-webkit-keyframes rightA
+{
+    0% {padding-right: 10px;}
+    50% {padding-right: 5px;}
+    100% {padding-right: 15px;}
+}
+.i-item-info, .i-item-items
+{
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+}
+.i-item-items
+{
+    text-align: center;
+    font-family: Prime, Play;
+    display: table;
+    padding: 20px;
+}
+.i-item-info
+{
+    display: table;
+}
+.i-item-items
+{
+    font-size: 18px;
+}
+.i-i-info, .i-i-item
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.i-i-item a
+{
+    width: calc(20% - 16px);
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    margin-right: 20px;
+}
+.i-i-item a:last-of-type
+{
+    margin-right: 0;
+}
+.items
+{
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+}
+.i-information
+{
+    width: 100%;
+    height: 282px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Prime, Play;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.i-information ul
+{
+    list-style: none;
+}
+.itemImage
+{
+    width: 100%;
+    display: block;
+}
+.itemProperties
+{
+    width: 100%;
+}
+.itemProperties table
+{
+    width: 100%;
+    height: 100%;
+}
+#index_body
+{
+
+}
+.indexBox
+{
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+    display: flex;
+    align-content: stretch;
+    background: url('/newUniverse/images/space_alt.jpg') no-repeat fixed;
+    background-size: cover;
+}
+.ukr_eng
+{
+    width: calc(33.33333% - 14px);
+    font-size: 18px;
+    font-family: Prime, Play;
+    border: 2px solid transparent;
+    margin: 7px;
+}
+.default_ukr_eng
+{
+    background-color: rgba(4, 20, 33, .75);
+    color: #c1c1c1;
+}
+.default_ukr_eng:hover
+{
+    background-color: rgba(4, 20, 33, 1);
+}
+.alternate_ukr_eng
+{
+    background-color: rgba(7, 7, 9, .75);
+    color: #168f6e;
+}
+.alternate_ukr_eng:hover
+{
+    background-color: rgba(7, 7, 9, 1);
+}
+.standard_ukr_eng
+{
+    background-color: rgba(177, 177, 177, .5);
+    color: #202020;
+}
+.standard_ukr_eng:hover
+{
+    background-color: rgba(177, 177, 177, 1);
+}
+.ukr_eng table
+{
+    width: 100%;
+    height: 100%;
+}
+.ukr_eng table td
+{
+    padding: 20px;
+    text-align: center;
+}
+.textTD
+{
+    height: 35%;
+}
+.linkTD
+{
+    height: 15%;
+}
+.defaultHR
+{
+    border: 0;
+    border-bottom: 2px solid #c1c1c1;
+}
+.alternateHR
+{
+    border: 0;
+    border-bottom: 2px solid #168f6e;
+}
+.standardHR
+{
+    border: 0;
+    border-bottom: 2px solid #202020;
+}
+.langLink
+{
+    width: 130px;
+    border: 1px solid;
+    margin: auto;
+}
+.langLink a
+{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.defaultLangLink
+{
+    border-color: #c1c1c1;
+}
+.defaultLangLink a
+{
+    color: #c1c1c1;
+}
+.defaultLangLink a:hover
+{
+    background-color: #c1c1c1;
+    color: #041431;
+}
+.alternateLangLink
+{
+    border-color: #168f6e;
+}
+.alternateLangLink a
+{
+    color: #168f6e;
+}
+.alternateLangLink a:hover
+{
+    background-color: #168f6e;
+    color: #070709;
+}
+.standardLangLink
+{
+    border-color: #202020;
+}
+.standardLangLink a
+{
+    color: #202020;
+}
+.standardLangLink a:hover
+{
+    background-color: #202020;
+    color: #b1b1b1;
+}
+.langNote
+{
+    color: #ff0000;
+}
+.quoteBox
+{
+    text-align: center;
+}
+.authorBox
+{
+    text-align: right;
+    font-style: italic;
+}
+@media screen and (max-width: 1600px)
+{
+    .i-item-info, .i-item-items
+    {
+        font-size: 16px;
+    }
+    .allProp td
+    {
+        font-size: 14px;
+    }
+    .sTO_left, .sTO_right
+    {
+        width: 40px;
+        font-size: 36px;
+    }
+    .objectForm
+    {
+        font-size: 14px;
+    }
+    .s-obj
+    {
+        width: calc(25% - 30px);
+    }
+    .infoSlider > table td.titleCell
+    {
+        font-size: 40px;
+    }
+    .sortTable
+    {
+        font-size: 16px;
+    }
+    .t_m_title
+    {
+        font-size: 28px;
+    }
+    .navigationList > li
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .ukr_eng
+    {
+        font-size: 16px;
+    }
+    .object_i_p
+    {
+        display: block;
+    }
+    .objectImage, .objectProp
+    {
+        width: 100%;
+    }
+    .o_caption
+    {
+        margin-bottom: 15px;
+    }
+    .sTO_left, .sTO_right
+    {
+        width: 30px;
+        font-size: 28px;
+    }
+    .infoObjInfo
+    {
+        width: calc(50% - 14px);
+    }
+    .s-obj
+    {
+        width: calc(33.33333% - 30px);
+    }
+    .t_m_title
+    {
+        font-size: 24px;
+    }
+    .navigationList > li
+    {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1280px)
+{
+    .i-item-info, .i-item-items
+    {
+        font-size: 14px;
+    }
+    .ukr_eng
+    {
+        font-size: 14px;
+    }
+    .ch_ab
+    {
+        display: block;
+    }
+    .characteristicsBox, .abbreviationBox
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .bodyStyleButton
+    {
+        display: none;
+    }
+    .sTO_left, .sTO_right
+    {
+        width: 20px;
+        font-size: 18px;
+    }
+    .s-obj
+    {
+        width: calc(50% - 30px);
+    }
+    .sortTable
+    {
+        font-size: 14px;
+    }
+    .sortTable th
+    {
+        padding: 0;
+    }
+    .t_m_title
+    {
+        font-size: 22px;
+    }
+    .navigationList > li
+    {
+        font-size: 14px;
+    }
+    .hiddenTitle
+    {
+        font-size: 22px;
+    }
+    .hiddenLink
+    {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1180px)
+{
+    .i-item-items
+    {
+        display: none;
+    }
+    .i-item-info
+    {
+        height: 100%;
+        font-size: 20px;
+    }
+    .i-information
+    {
+        padding: 25px 15px;
+    }
+    .ukr_eng
+    {
+        font-size: 12px;
+    }
+    .titleBox
+    {
+        display: none;
+    }
+    .hiddenNav2
+    {
+        display: block;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .infoObjInfo
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .infoContent
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .s-obj
+    {
+        width: calc(100% - 30px);
+    }
+}
+@media screen and (max-height: 850px)
+{
+    .itemProperties
+    {
+        display: none;
+    }
+    .ukr_eng
+    {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #navShowBtn
+    {
+        display: block;
+    }
+    #navCloseBtn
+    {
+        display: none;
+    }
+    .titleBox
+    {
+        display: block;
+    }
+    .t_m_title a
+    {
+        display: none;
+    }
+    .navigationList
+    {
+        display: none;
+    }
+    .t_lower .labels
+    {
+        display: none;
+    }
+    .hiddenNav
+    {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+    }
+    .hiddenNav2
+    {
+        display: none;
+    }
+}
+@media screen and (max-height: 750px)
+{
+    .i-item-items
+    {
+        display: none;
+    }
+    .i-item-info
+    {
+        height: 100%;
+    }
+    .ukr_eng
+    {
+        font-size: 8px;
+    }
+}

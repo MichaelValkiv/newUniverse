@@ -1,0 +1,583 @@
+/*-----------------------------------------------------Global---------------------------------------------------------*/
+
+body
+{
+    /*background: url('/newUniverse/images/space_alt.jpg') no-repeat fixed;*/
+    /*background-size: cover;*/
+    /*background-color: #ffffff;*/
+}
+h3
+{
+    color: #ff0000;
+}
+h4, h5
+{
+    color: #ff0000;
+}
+q, blockquote
+{
+    border-left: 3px solid #ff0000;
+}
+.key_word
+{
+    color: #ff0000;
+}
+*::selection, *::-moz-selection
+{
+    color: rgba(10, 10, 10, 1);
+    background: rgba(255, 255, 255, 1);
+}
+.bg_color1
+{
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.bg_color2
+{
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.colorSwitcher
+{
+    display: none;
+}
+.sField
+{
+    background-color: transparent;
+    border: 1px solid #202020;
+    color: #202020;
+}
+.sField:focus
+{
+    outline: none;
+}
+.sBtn
+{
+    background-color: #202020;
+    border-top: 1px solid #202020;
+    border-right: 1px solid #202020;
+    border-bottom: 1px solid #202020;
+    color: #ffffff;
+}
+.sRes
+{
+    background-color: #202020;
+}
+.sRes li
+{
+    border-color: #ffffff;
+}
+.sRes li a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.sRes li a:hover
+{
+    color: #202020;
+    background-color: #ffffff;
+}
+.activeRes
+{
+    background-color: #b1b1b1;
+}
+.ukr, .eng
+{
+    border-color: #202020;
+}
+.langButton
+{
+    color: #202020;
+}
+.currentLang
+{
+    background-color: #202020;
+    color: #b1b1b1;
+}
+.i-header
+{
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.t_upper, .t_m_title, .f_lower, .f_m_left
+{
+    /*background-color: rgba(255, 255, 255, 1);*/
+    background-color: rgba(32, 32, 32, 1);
+}
+.t_m_nav, .t_lower, .f_upper, .f_m_right
+{
+    /*background-color: rgba(32, 32, 32, 1);*/
+    background-color: rgba(255, 255, 255, 1);
+    color: #202020;
+}
+.t_m_title, .f_m_right
+{
+    border-bottom: 3px solid #ff0000;
+}
+.t_m_nav, .f_m_left
+{
+    border-top: 3px solid #ff0000;
+}
+.t_m_
+{
+    border-bottom: 50px solid rgba(255, 255, 255, 1);
+    border-left: 50px solid rgba(32, 32, 32, 1);
+}
+.f_m_
+{
+    border-top: 50px solid rgba(255, 255, 255, 1);
+    border-left: 50px solid rgba(32, 32, 32, 1);
+}
+.boxTitle
+{
+    background-color: rgba(0, 0, 0, 1);
+    color: #202020;
+    border: 2px solid #202020;
+}
+.titleBox, .t_m_title a, .f_m_left
+{
+    color: #ffffff;
+}
+.navigationList li a, .f_m_right a
+{
+    color: #202020;
+}
+.mainLink a:after
+{
+    background-color: #202020;
+}
+.imageAndCaption > img
+{
+    border: 2px solid #202020;
+}
+.radioB
+{
+    border: 2px solid #ffffff;
+}
+.line2, .line3
+{
+    background-color: #ffffff;
+}
+.objectsButton
+{
+    color: #202020;
+}
+.objectsButton a
+{
+    color: #202020;
+}
+.imageAndCaption figcaption
+{
+    background-color: #202020;
+    color: #ffffff;
+}
+.fs1
+{
+    border: 2px solid #202020;
+}
+.fs2
+{
+    border: 2px solid #ffffff;
+}
+.f_s1
+{
+    background-color: #202020;
+}
+.f_s2
+{
+    background-color: #ffffff;
+}
+.tBox, .tBox_
+{
+    border-bottom: 3px solid #ff0000;
+    color: #ff0000;
+}
+.hiddenNav, .hiddenNav2
+{
+    background-color: #202020;
+}
+.hiddenNav a, .hiddenNav2 a
+{
+    color: #ffffff;
+}
+.checkedStyle
+{
+    background-color: #ffffff;
+}
+#s
+{
+    right: 1px;
+}
+#d, #a
+{
+    right: 24px;
+}
+@media screen and (max-width: 800px)
+{
+    .hiddenNav
+    {
+        border-top: 3px solid #ffffff;
+    }
+}
+/*--------------------------------------------------object.php--------------------------------------------------------*/
+
+.o-cont
+{
+    background-color: #b1b1b1;
+}
+.objProperties, .sameTypeObjects, .abbreviationBox, .o_picture, .o_caption, .objectProp, .objectDesc,
+.objectObjects, .characteristicsBox
+{
+    color: #202020;
+    background-color: rgba(255, 255, 255, 1);
+    border: 4px double transparent;
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.thisObjectTitle
+{
+    color: #ff0000;
+    background-color: rgba(255, 255, 255, 1);
+    border: 4px double transparent;
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.minorObj a, .objProperties a
+{
+    color: #202020;
+}
+.minorObj a:hover, .minorObj:hover, .abbreviation, .minorObj a:focus
+{
+    color: #ffffff;
+}
+.abbreviation
+{
+    background-color: #202020;
+}
+.abbreviation
+{
+    border: 1px solid #202020;
+}
+.sTO_left, .sTO_right
+{
+    color: rgba(177, 177, 177, 1);
+}
+.sTO_left:hover, .sTO_right:hover
+{
+    background-color: rgba(32, 32, 32, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.sTO_fake_radio
+{
+    border: 2px solid #202020;
+}
+.fr
+{
+    background-color: #202020;
+}
+.ch_title
+{
+    border: 1px solid #202020;
+    color: #202020;
+}
+.ch_title_active
+{
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+}
+.ch_title:hover
+{
+    border: 1px solid #ff0000;
+    /*padding-left: 55px;*/
+    color: #ff0000;
+}
+.ch_s_d
+{
+    border: 1px solid #202020;
+    /*border-left: 1px solid #202020;*/
+}
+.bodyStyleButton
+{
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+.bodyStyleButton:hover
+{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.allProp td:nth-of-type(even)
+{
+    border-left: 1px solid #202020;
+}
+.allProp td:nth-of-type(odd)
+{
+    border-right: 1px solid #202020;
+}
+.o_img
+{
+    border: 2px solid #202020;
+}
+.otherObjImg:hover
+{
+    border-color: #202020;
+}
+/*------------------------------------------------information.php-----------------------------------------------------*/
+
+.iCont
+{
+    background-color: #b1b1b1;
+}
+.objectForm, .objectBox, .infoObjCaption, .c_desc
+{
+    background-color: #202020;
+    color: #ffffff;
+}
+.hiddenFontSelector
+{
+    background-color: #ffffff;
+}
+.s-button a:hover, .infoObjImgLink, .infoObjDesc
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+.infoObjHiddenBox
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+.s-button a:hover, .infoObjInfo
+{
+    color: #202020;
+}
+.infoObjInfo
+{
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.objectForm
+{
+    border-top: 2px solid #202020;
+    border-bottom: 2px solid #ffffff;
+}
+.s-img img
+{
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    border: 2px solid #202020;
+}
+.s-inf
+{
+    border: 2px solid transparent;
+}
+.s-title
+{
+    border-bottom: 4px solid rgba(32, 32, 32, 1);
+    background-color: #ffffff;
+    color: #202020;
+}
+.s-class
+{
+    border-color: #202020;
+}
+.s-button
+{
+    background-color: rgba(32, 32, 32, 1);
+    border-top: 4px solid rgba(255, 255, 255, 1);
+}
+.s-button a
+{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.infoObjectTabs
+{
+    border: 2px solid #ffffff;
+    background-color: #202020;
+    color: #ffffff;
+}
+.infoObjectTabsActive
+{
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #202020;
+}
+.infoObjTitleLink, .infoObjTitle
+{
+    color: #ff0000;
+}
+.infoSlider
+{
+    background-color: rgba(32, 32, 32, .75);
+}
+.infoSlider:hover
+{
+    background-color: rgba(32, 32, 32, .1);
+}
+.infoSlider > table td.titleCell
+{
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+.infoSlider > table td.infoCell
+{
+    color: #ffffff;
+}
+.infoSlider:hover > table td.titleCell,
+.infoSlider:hover > table td.infoCell
+{
+    color: transparent;
+}
+.infoSlider:hover > table td.titleCell
+{
+    border-bottom-color: transparent;
+}
+.infoObjImgLink > img, .infoObjImg > img, .i_desc
+{
+    border: 2px solid #202020;
+}
+.table_desc th, .table_desc td
+{
+    border-color: #202020;
+}
+.table_desc th
+{
+    background-color: #202020;
+    color: #ffffff;
+}
+.infoObjDesc a
+{
+    color: #ff0000;
+}
+/*---------------------------------------------------tables.php-------------------------------------------------------*/
+
+.tCont
+{
+    background-color: #b1b1b1;
+}
+.grayBox
+{
+    color: rgba(177, 177, 177, 1);
+}
+.sortOptions
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+.sortBtn
+{
+    border: 2px solid #202020;
+    color: #202020;
+}
+.sortBtn:hover
+{
+    background-color: rgba(32, 32, 32, 1);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 1), inset 0 2px 0 rgba(255, 255, 255, 1), inset 0 0 0 2px rgba(255, 255, 255, 1);
+}
+.sortOptions > label > div
+{
+    border: 2px solid #202020;
+}
+.sortOptions > label > div > div
+{
+    background-color: #202020;
+}
+.labelsForTabs
+{
+    background-color: rgba(255, 255, 255, 1);
+    color: #202020;
+    border: 1px solid #404040;
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.labelsForTabs:not(:last-of-type)
+{
+    border-right: none;
+}
+.tablesTab
+{
+    color: #202020;
+}
+.allTabs:nth-of-type(1):checked + label:nth-of-type(1),
+.allTabs:nth-of-type(2):checked + label:nth-of-type(2),
+.allTabs:nth-of-type(3):checked + label:nth-of-type(3),
+.allTabs:nth-of-type(4):checked + label:nth-of-type(4),
+.allTabs:nth-of-type(5):checked + label:nth-of-type(5)
+{
+    background-color: rgba(32, 32, 32, 1);
+    color: #ffffff;
+}
+.sortTable td:not(:last-of-type)
+{
+    border-right: 1px solid #404040;
+}
+.sortTable tr
+{
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.sortTable td, .sortTable th
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+.sortTable a
+{
+    color: #ff0000;
+}
+.hiddenTable th
+{
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #202020;
+}
+/*---------------------------------------------------main.php--------------------------------------------------------*/
+
+.i-cont
+{
+    background-color: #b1b1b1;
+}
+.i-information, .items
+{
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+    box-shadow: 7px 7px 0 0 rgba(32, 32, 32, .8);
+}
+.items:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.arrow, .i-item-info, .i-item-items, .i-i-item a
+{
+    color: #202020;
+}
+.i-information, .items
+{
+    border: 4px double transparent;
+}
+.i-item-info, .i-item-items
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+.itemImage
+{
+    border: 2px solid #202020;
+}

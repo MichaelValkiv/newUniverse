@@ -1,0 +1,381 @@
+.objectsButton
+{
+    visibility: visible;
+}
+#navShowBtn, #navCloseBtn
+{
+    visibility: hidden;
+}
+.chosenAnchor
+{
+    text-transform: uppercase;
+    background-color: rgba(255, 0, 0, .7);
+}
+.thisTypeObjects
+{
+    height: calc(100vh - 90px);
+    width: 100%;
+    position: fixed;
+    top: 90px;
+    z-index: 3;
+    overflow: auto;
+    display: none;
+    font-family: Prime, Play;
+    font-weight: bold;
+}
+.objectForm
+{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iCheckbox
+{
+    display: none;
+}
+.objectBox
+{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 15px 15px 0 15px;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.s-obj
+{
+    width: calc(20% - 30px);
+    float: left;
+    margin: 0 15px 15px 15px;
+}
+.s-img
+{
+    position: relative;
+}
+.s-img img
+{
+    cursor: pointer;
+    display: block;
+}
+.s-inf
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /*height: 100%;*/
+    display: none;
+}
+.s-obj:hover .s-inf
+{
+    display: block;
+}
+.s-title
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 50%;
+    position: relative;
+}
+.s-button
+{
+    height: 50%;
+}
+.s-class
+{
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    border: 1px solid;
+    padding: 1px 3px;
+}
+.s-button a
+{
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+.s-title, .s-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*.newCheckbox*/
+/*{*/
+    /*width: 30px;*/
+    /*height: 12px;*/
+    /*display: inline-block;*/
+    /*padding: 1px;*/
+    /*position: relative;*/
+/*}*/
+/*.newCheckboxStatus*/
+/*{*/
+    /*width: 12px;*/
+    /*height: 12px;*/
+    /*display: block;*/
+    /*position: absolute;*/
+/*}*/
+.infoObjectTabs
+{
+    float: left;
+    margin: 0 5px;
+    padding: 5px 10px;
+    user-select: none;
+}
+.infoContent
+{
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 7px;
+    font-family: Prime, Play;
+    display: flex;
+    flex-wrap: wrap;
+    /*position: relative;*/
+}
+.iCont
+{
+    overflow: hidden;
+}
+.infoObjInfo
+{
+    width: calc(33.33333% - 14px);
+    /*overflow: hidden;*/
+    /*font-size: 1vw;*/
+    margin: 7px;
+    /*border: 1px solid yellowgreen;*/
+    /*float: left;*/
+}
+.infoObjImgLink, .infoObjCaption
+{
+    padding: 10px;
+    /*margin-bottom: 15px;*/
+}
+.infoObjImgLink
+{
+    position: relative;
+    cursor: pointer;
+    /*border: 1px solid red;*/
+}
+.infoObjImgLink > img
+{
+    display: block;
+}
+.infoSlider
+{
+    /*display: none;*/
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 80px;
+    /*border: 1px solid blue;*/
+}
+.infoSlider > table
+{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid yellow;*/
+    border-collapse: collapse;
+}
+.infoSlider > table td
+{
+    width: 50%;
+    height: 50%;
+    /*border: 1px solid white;*/
+}
+.infoSlider > table td.titleCell
+{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    vertical-align: bottom;
+    padding: 10px 0;
+}
+.infoSlider > table td.infoCell
+{
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.infoObjImgLink img
+{
+    display: block;
+}
+.infoObjHiddenBox
+{
+    padding-top: 10px;
+    display: none;
+    width: 100%;
+    /*height: calc(100vh - 140px);*/
+    height: calc(100vh - 0px);
+    position: absolute;
+    /*top: 140px;*/
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.hiddenFontSelector
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: default;
+}
+.hiddenFontSelector > label
+{
+    cursor: pointer;
+}
+.infoObjTitle
+{
+    font-family: EuroFont;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    position: relative;
+}
+.img_caption
+{
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    float: left;
+}
+.infoObjImg
+{
+    width: 100%;
+}
+.infoObjImg img
+{
+    display: block;
+}
+.infoObjCaption
+{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: right;
+}
+.infoObjDesc
+{
+    text-align: justify;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.infoObjDesc a
+{
+    font-style: italic;
+    text-decoration: none;
+}
+.infoObjDesc a:hover
+{
+    text-decoration: underline;
+}
+.infoObjDesc ul
+{
+    /*list-style: none;*/
+    list-style-type: square;
+}
+.infoObjClose
+{
+    width: 50px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+.infoObjInfo ol
+{
+    /*list-style: none;*/
+    text-align: center;
+}
+/*.infoObjInfo ul*/
+/*{*/
+    /*text-align: right;*/
+/*}*/
+.hideTable
+{
+    display: none;
+}
+.iCheckboxLabel
+{
+    cursor: pointer;
+}
+@media screen and (max-width: 1600px)
+{
+    .objectForm
+    {
+        font-size: 14px;
+    }
+    .s-obj
+    {
+        width: calc(25% - 30px);
+    }
+    .infoSlider > table td.titleCell
+    {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .infoObjInfo
+    {
+        width: calc(50% - 14px);
+    }
+    .s-obj
+    {
+        width: calc(33.33333% - 30px);
+    }
+}
+@media screen and (max-width: 1280px)
+{
+    .s-obj
+    {
+        width: calc(50% - 30px);
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .infoObjInfo
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .infoContent
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .s-obj
+    {
+        width: calc(100% - 30px);
+    }
+}

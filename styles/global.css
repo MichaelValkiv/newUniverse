@@ -1,0 +1,834 @@
+@font-face
+{
+    font-family: Monda;
+    src: url('/newUniverse/fonts/monda/mondabold.ttf') format('truetype'),
+    url('/newUniverse/fonts/monda/mondabold.woff') format('woff'),
+    url('/newUniverse/fonts/monda/mondabold.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: Prime;
+    src: url('/newUniverse/fonts/prime/primeregular.ttf') format('truetype'),
+    url('/newUniverse/fonts/prime/primeregular.woff') format('woff'),
+    url('/newUniverse/fonts/prime/primeregular.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: MSGothic;
+    src: url('/newUniverse/fonts/msGothic/MS Gothic.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: LithosPro;
+    src: url('/newUniverse/fonts/lithosPro/lithos_pro_black.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: EuroFont;
+    src: url('/newUniverse/fonts/euroFont/EurofontExtendedC.otf') format('opentype');
+}
+@font-face
+{
+    font-family: Play;
+    src: url('/newUniverse/fonts/play/Play-Regular.ttf') format('truetype');
+}
+.bodyStyle
+{
+    overflow: hidden;
+}
+.boxSizingStyle, .i-i-item a, .imageAndCaption > img, .infoNav a
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.boxSizingStyle2
+{
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;;
+    -webkit-box-sizing: content-box;;
+}
+.arrow, .dLabel, .aLabel, .items, .siteTitle, .thisObjectTitle, .labels label, .boxTitle, .infoNav a
+{
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+h3
+{
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 5px 0;
+}
+h4, h5
+{
+    letter-spacing: 1px;
+}
+q
+{
+    margin-left: 100px;
+    padding: 10px;
+    display: block;
+}
+blockquote
+{
+    padding: 10px;
+}
+.key_word
+{
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.i-header, .i-footer
+{
+    width: 100%;
+    /*overflow: hidden;*/
+}
+.boxTitle
+{
+    width: 100%;
+    font-family: Prime, Play;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    cursor: default;
+}
+.transitionBox, .labelsForTabs, .sortTable tr, .sortTable td, .sortTable th, .navigationList li, .navigationList li a, .otherObjects a,
+.siteTitle a, .imageAndCaption figcaption, .infoNav a
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.siteButtons
+{
+    width: 250px;
+    /*border: 1px solid yellow;*/
+}
+.styleSelector
+{
+    width: 250px;
+    float: right;
+}
+.titleBox
+{
+    width: 100%;
+    font-family: Prime, Play;
+    /*border: 1px solid darkgreen;*/
+}
+.hiddenNav
+{
+    /*border: 1px solid yellow;*/
+    /*text-align: center;*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.hiddenNav2
+{
+    display: none;
+    z-index: 1;
+}
+.hiddenNavList
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*display: flex;*/
+    /*align-content: space-between;*/
+    /*border: 1px solid green;*/
+    text-align: center;
+}
+.hiddenNavList2
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.hiddenMainLink
+{
+    height: 100%;
+    display: inline-block;
+    list-style: none;
+    /*border: 1px solid red;*/
+    padding: 0 5px;
+}
+.hiddenMainLink > label
+{
+    cursor: pointer;
+}
+.hiddenMainLink2
+{
+    height: 100%;
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+}
+.hiddenTitle
+{
+    display: block;
+    font-family: LithosPro, EuroFont;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.hiddenTitle2
+{
+    display: block;
+    font-family: LithosPro, EuroFont;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.hiddenLink
+{
+    text-decoration: none;
+    font-family: Prime, Play;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    padding: 10px;
+}
+.hiddenLink2
+{
+    text-decoration: none;
+    font-family: Prime, Play;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    padding: 10px;
+}
+.hiddenStyle
+{
+    padding: 10px;
+}
+.t_upper
+{
+    width: 100%;
+    height: 40px;
+    display: table;
+    padding: 0 15px 0 5px;
+    z-index: 1;
+    /*border: 1px solid yellow;*/
+}
+.t_upperFixed
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.t_middle
+{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    /*display: table;*/
+    /*border: 1px solid deeppink;*/
+}
+.t_lower
+{
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+    /*position: relative;*/
+    /*border: 1px solid orangered;*/
+}
+.t_u_navigation
+{
+    width: 20%;
+    display: table-cell;
+    vertical-align: middle;
+    /*border: 1px solid blue;*/
+}
+#navShowBtn, #navCloseBtn
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    margin-top: 5px;
+    /*margin-left: 5px;*/
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    /*border: 1px solid yellow;*/
+}
+#navShowBtn:hover, #navCloseBtn:hover
+{
+    opacity: .35;
+}
+#navCloseBtn
+{
+    margin-left: -4px;
+}
+.line3
+{
+    width: 22px;
+    height: 3px;
+}
+.line3:not(:first-child)
+{
+    margin-top: 5px;
+}
+.line2
+{
+    width: 27px;
+    height: 3px;
+}
+#line2Upper
+{
+    margin-top: 8px;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+#line2Lower
+{
+    margin-top: -3px;
+    transform-origin: 50% 50%;
+    transform: rotate(315deg);
+}
+.t_u_style
+{
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+    /*border: 1px solid red;*/
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dLabel, .aLabel, .sLabel
+{
+    text-transform: lowercase;
+    cursor: pointer;
+}
+.radioB, .fontSwitcher
+{
+    display: inline-block;
+    width: 40px;
+    height: 17px;
+    padding: 1px;
+    margin: auto;
+    border-radius: 2px;
+    position: relative;
+}
+.checkedStyle, .f_s
+{
+    width: 11px;
+    height: 11px;
+    border-radius: 1px;
+    position: absolute;
+}
+.default_f_s
+{
+    right: 1px;
+}
+.t_m_title
+{
+    width: calc(25% - 50px);
+    height: 50px;
+    float: left;
+    font-size: 40px;
+    font-family: LithosPro, EuroFont;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+    /*border: 1px solid peru;*/
+}
+.t_m_title a
+{
+    text-decoration: none;
+    outline: none;
+}
+.t_m_
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    /*border: 1px solid yellow;*/
+}
+.t_m_nav
+{
+    width: 75%;
+    height: 50px;
+    float: right;
+    /*border: 1px solid palegreen;*/
+}
+.navigationList
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    /*border: 1px solid palegreen;*/
+}
+.navigationList li a:after
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.navigationList > li
+{
+    display: inline-block;
+    list-style: none;
+    line-height: 45px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.mainLink a
+{
+    text-decoration: none;
+    font-family: Prime, Play;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    outline: none;
+}
+.aLink
+{
+    text-transform: uppercase;
+}
+.mainLink > a:after
+{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 33px;
+    left: 0;
+}
+.mainLink a:hover:after
+{
+    width: 100%;
+}
+#default_css, #alternate_css, #standard_css,
+#default_font, #alternate_font, #standard_font
+{
+    display: none;
+}
+.objectsButton a
+{
+    font-weight: bold;
+    display: block;
+    height: 45px;
+    text-decoration: none;
+}
+.objectsButton a:after
+{
+    height: 0;
+}
+.lineNav
+{
+    overflow: hidden;
+    z-index: 3;
+}
+.lineNavS
+{
+    position: fixed;
+    height: 130px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top: none;
+}
+.labels
+{
+    width: 20%;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+}
+.searchBox
+{
+    width: 100%;
+    /*height: 50px;*/
+    margin-top: 15px;
+    /*border: 1px solid red;*/
+    /*overflow: hidden;*/
+    position: relative;
+    font-family: Prime, Play;
+}
+.searchBox table
+{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid green;*/
+}
+.searchBox table td.searchTD
+{
+    vertical-align: middle;
+    text-align: right;
+    /*border: 1px solid orangered;*/
+    width: 50%;
+}
+.searchBox table td.langTD
+{
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 10px;
+    /*border: 1px solid orangered;*/
+    width: 50%;
+}
+.searchCont
+{
+    /*border: 1px solid yellow;*/
+    width: 350px;
+    overflow: hidden;
+    float: right;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*!*bottom: 20px;*!*/
+    /*right: 0;*/
+    padding: 10px;
+    /*z-index: 1;*/
+}
+.sField
+{
+    float: right;
+    width: 250px;
+    height: 35px;
+    font-family: Prime, Play;
+    font-size: 16px;
+    border-radius: 5px 0 0 0;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+.sBtn
+{
+    width: 100px;
+    height: 35px;
+    float: right;
+    font-family: Prime, Play;
+    font-size: 16px;
+    border-radius: 0 0 5px 0;
+    border-left: none;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.sRes
+{
+    float: left;
+    display: none;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 5px 0;
+    text-align: center;
+    position: absolute;
+    top: 48px;
+    z-index: 1;
+}
+.sRes li a
+{
+    display: block;
+    padding: 5px 0;
+}
+.t_u_lang
+{
+    /*border: 1px solid red;*/
+    font-family: EuroFont;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.ukr, .eng
+{
+    width: 50px;
+    /*height: 50%;*/
+    padding: 3px;
+    text-align: center;
+}
+.ukr
+{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    /*border-radius: 5px 0 0 0;*/
+}
+.eng
+{
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    /*border-radius: 0 0 5px 0;*/
+}
+.ukr_link, .eng_link
+{
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    display: block;
+    padding: 2px 4px;
+}
+.colorSwitcher
+{
+    width: 40px;
+    height: 17px;
+    padding: 1px;
+    float: right;
+    border: 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.colorSwitcher > div
+{
+    width: 11px;
+    height: 11px;
+    right: 24px;
+    border-radius: 1px;
+    position: absolute;
+}
+.labels label
+{
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+.labels label:not(:last-of-type)
+{
+    /*margin-right: 15px;*/
+}
+#font1, #font2, #font3, #font4, #font5
+{
+    display: none;
+}
+.imageAndCaption figcaption
+{
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+    padding: 15px 10px 15px 10px;
+}
+.tBox
+{
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.footerBox
+{
+    width: 100%;
+    font-family: Prime, Play;
+    /*margin-top: 15px;*/
+}
+.f_upper
+{
+    width: 100%;
+    height: 50px;
+}
+.f_middle
+{
+    width: 100%;
+    height: 50px;
+}
+.f_lower
+{
+    width: 100%;
+    height: 50px;
+}
+.f_m_left, .f_m_right, .f_m_
+{
+    height: 50px;
+}
+.f_m_left
+{
+    width: calc(75% - 50px);
+    float: left;
+    font-size: 16px;
+    padding: 3px 10px;
+    /*border: 1px solid yellow;*/
+}
+.f_m_
+{
+    width: 50px;
+    float: left;
+}
+.f_m_right
+{
+    width: 25%;
+    float: right;
+    font-size: 40px;
+    font-family: LithosPro, EuroFont;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+}
+.f_m_right a
+{
+    text-decoration: none;
+    outline: none;
+}
+.i_c_desc
+{
+    width: 50%;
+    float: right;
+    margin-left: 15px;
+}
+.i_c_desc1
+{
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.i_desc
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.i_desc img
+{
+    display: block;
+}
+.c_desc
+{
+    width: 100%;
+    padding: 10px;
+}
+.table_desc
+{
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+.table_desc th
+{
+    border: 1px solid;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+.table_desc td
+{
+    border: 1px solid;
+    padding: 15px;
+}
+@media screen and (max-width: 1600px)
+{
+    .t_m_title
+    {
+        font-size: 28px;
+    }
+    .navigationList > li
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .t_m_title
+    {
+        font-size: 24px;
+    }
+    .navigationList > li
+    {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1280px)
+{
+    .t_m_title
+    {
+        font-size: 22px;
+    }
+    .navigationList > li
+    {
+        font-size: 14px;
+    }
+    .hiddenTitle
+    {
+        font-size: 22px;
+    }
+    .hiddenLink
+    {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1180px)
+{
+    .titleBox
+    {
+        display: none;
+    }
+    .hiddenNav2
+    {
+        display: block;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #navShowBtn
+    {
+        display: none;
+    }
+    #navCloseBtn
+    {
+        display: block;
+    }
+    .titleBox
+    {
+        display: block;
+    }
+    .t_m_title a
+    {
+        display: none;
+    }
+    .navigationList
+    {
+        display: none;
+    }
+    .t_lower .labels
+    {
+        display: none;
+    }
+    .hiddenNav
+    {
+        position: fixed;
+        top: 40px;
+        /*bottom: 0;*/
+        left: 0;
+        right: 0;
+    }
+    .hiddenNav2
+    {
+        display: none;
+    }
+}

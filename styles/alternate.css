@@ -1,0 +1,542 @@
+/*-----------------------------------------------------Global---------------------------------------------------------*/
+
+body
+{
+    background: url('/newUniverse/images/space_alt.jpg') no-repeat fixed;
+    background-size: cover;
+}
+h3
+{
+    color: #ffffff;
+}
+h4, h5
+{
+    color: #ffffff;
+}
+q, blockquote
+{
+    border-left: 3px solid #ffffff;
+}
+.key_word
+{
+    color: #ffffff;
+}
+*::selection, *::-moz-selection
+{
+    color: rgba(10, 10, 10, 1);
+    background: rgba(255, 255, 255, 1);
+}
+.bg_color1
+{
+    background-color: rgba(7, 7, 9, .85);
+}
+.bg_color2
+{
+    background-color: rgba(7, 7, 9, 1);
+}
+.colorSwitcher
+{
+    border-color: #070709;
+}
+.colorSwitcher > div
+{
+    background-color: #070709;
+}
+.sField
+{
+    background-color: transparent;
+    border: 1px solid #168f6e;
+    color: #168f6e;
+}
+.sField:focus
+{
+    outline: none;
+}
+.sBtn
+{
+    background-color: #168f6e;
+    border-top: 1px solid #168f6e;
+    border-right: 1px solid #168f6e;
+    border-bottom: 1px solid #168f6e;
+    color: #070709;
+}
+.sRes
+{
+    background-color: #168f6e;
+}
+.sRes li
+{
+    border-color: #070709;
+}
+.sRes li a
+{
+    color: #070709;
+    text-decoration: none;
+}
+.sRes li a:hover
+{
+    color: #168f6e;
+    background-color: #070709;
+}
+.activeRes
+{
+    background-color: #ffffff;
+}
+.ukr, .eng
+{
+    border-color: #168f6e;
+}
+.langButton
+{
+    color: #168f6e;
+}
+.currentLang
+{
+    background-color: #168f6e;
+    color: #070709;
+}
+.t_upper, .t_m_title, .f_lower, .f_m_left
+{
+    background-color: rgba(7, 7, 9, 1);
+}
+.t_m_nav, .t_lower, .f_upper, .f_m_right
+{
+    background-color: rgba(22, 143, 110, 1);
+    color: #070709;
+}
+.t_m_title, .f_m_right
+{
+    border-bottom: 3px solid #ffffff;
+}
+.t_m_nav, .f_m_left
+{
+    border-top: 3px solid #ffffff;
+}
+.t_m_
+{
+    border-bottom: 50px solid rgba(22, 143, 110, 1);
+    border-left: 50px solid rgba(7, 7, 9, 1);
+}
+.f_m_
+{
+    border-top: 50px solid rgba(22, 143, 110, 1);
+    border-left: 50px solid rgba(7, 7, 9, 1);
+}
+.boxTitle
+{
+    background-color: rgba(0, 0, 0, 1);
+    color: #168f6e;
+    border: 2px solid #168f6e;
+}
+.titleBox, .t_m_title a, .f_m_left
+{
+    color: #168f6e;
+}
+.navigationList li a, .f_m_right a
+{
+    color: #070709;
+}
+.mainLink a:after
+{
+    background-color: #070709;
+}
+.radioB, .imageAndCaption > img
+{
+    border: 2px solid #168f6e;
+}
+.line2, .line3
+{
+    background-color: #168f6e;
+}
+.objectsButton
+{
+    color: #168f6e;
+}
+.objectsButton a
+{
+    color: #168f6e;
+}
+.imageAndCaption figcaption
+{
+    background-color: #168f6e;
+    color: #070709;
+}
+.fs1, .fs2
+{
+    border: 2px solid #070709;
+}
+.f_s1, .f_s2
+{
+    background-color: #070709;
+}
+.tBox, .tBox_
+{
+    border-bottom: 3px solid #ffffff;
+    color: #ffffff;
+}
+.hiddenNav, .hiddenNav2
+{
+    background-color: #168f6e;
+}
+.hiddenNav a, .hiddenNav2 a
+{
+    color: #070709;
+}
+.checkedStyle
+{
+    background-color: #168f6e;
+}
+#a
+{
+    right: 1px;
+}
+#d, #s
+{
+    right: 24px;
+}
+@media screen and (max-width: 800px)
+{
+    .hiddenNav
+    {
+        border-top: 3px solid #ffffff;
+    }
+}
+/*--------------------------------------------------object.php--------------------------------------------------------*/
+
+.o-cont
+{
+    background-color: transparent;
+}
+.sameTypeObjects, .abbreviationBox, .o_picture, .o_caption, .objectProp, .objectDesc,
+.objectObjects, .characteristicsBox
+{
+    color: #168f6e;
+    border: 4px double transparent;
+    -webkit-box-shadow: 7px 7px 0 0 transparent;
+    -moz-box-shadow: 7px 7px 0 0 transparent;
+    box-shadow: 7px 7px 0 0 transparent;
+}
+.thisObjectTitle
+{
+    color: #ffffff;
+    border: 4px double transparent;
+    -webkit-box-shadow: 7px 7px 0 0 transparent;
+    -moz-box-shadow: 7px 7px 0 0 transparent;
+    box-shadow: 7px 7px 0 0 transparent;
+}
+.minorObj a, .objProperties a
+{
+    color: #168f6e;
+}
+.minorObj a:hover, .minorObj:hover, .abbreviation, .minorObj a:focus
+{
+    color: #070709;
+}
+.abbreviation
+{
+    background-color: #168f6e;
+}
+.abbreviation
+{
+    border: 1px solid #168f6e;
+}
+.sTO_left, .sTO_right
+{
+    color: rgba(22, 143, 110, 1);
+}
+.sTO_left:hover, .sTO_right:hover
+{
+    background-color: rgba(22, 143, 110, .55);
+    color: rgba(0, 255, 255, 1);
+}
+.sTO_fake_radio
+{
+    border: 2px solid #168f6e;
+}
+.fr
+{
+    background-color: #168f6e;
+}
+.ch_title
+{
+    border: 1px solid #168f6e;
+    color: #168f6e;
+}
+.ch_title_active
+{
+    background-color: #168f6e;
+    color: #070709;
+    text-align: center;
+}
+.ch_title:hover
+{
+    border: 1px solid #ffffff;
+    /*padding-left: 55px;*/
+    color: #ffffff;
+}
+.ch_s_d
+{
+    border: 1px solid #168f6e;
+    /*border-left: 1px solid #168f6e;*/
+}
+.bodyStyleButton
+{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.bodyStyleButton:hover
+{
+    background-color: #ffffff;
+    color: #070709;
+}
+.allProp td:nth-of-type(even)
+{
+    border-left: 1px solid #ffffff;
+}
+.allProp td:nth-of-type(odd)
+{
+    border-right: 1px solid #ffffff;
+}
+.o_img
+{
+    border: 2px solid #168f6e;
+}
+.otherObjImg:hover
+{
+    border-color: #168f6e;
+}
+/*------------------------------------------------information.php-----------------------------------------------------*/
+
+.iCont
+{
+    background-color: transparent;
+}
+.objectForm, .objectBox, .infoObjCaption, .c_desc
+{
+    background-color: #168f6e;
+    color: #070709;
+}
+.hiddenFontSelector
+{
+    background-color: #168f6e;
+    background: -moz-linear-gradient(left, #070709 10%, #168f6e 45%, #168f6e 55%, #070709 90%);
+    background: -webkit-linear-gradient(left, #070709 10%,#168f6e 45%,#168f6e 55%,#070709 90%);
+    background: linear-gradient(to right, #070709 10%,#168f6e 45%,#168f6e 55%,#070709 90%);
+}
+.s-button a:hover
+{
+    background-color: rgba(7, 7, 9, .85);
+}
+.infoObjHiddenBox
+{
+    background-color: rgba(7, 7, 9, 1);
+}
+.s-button a:hover, .infoObjInfo
+{
+    color: #168f6e;
+}
+.objectForm
+{
+    border-top: 2px solid #168f6e;
+    border-bottom: 2px solid #070709;
+}
+.s-img img
+{
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    border: 2px solid #168f6e;
+}
+.s-inf
+{
+    border: 2px solid transparent;
+}
+.s-title
+{
+    border-bottom: 4px solid rgba(22, 143, 110, .85);
+    background-color: rgba(7, 7, 9, .85);
+    color: #168f6e;
+}
+.s-class
+{
+    border-color: #168f6e;
+}
+.s-button
+{
+    background-color: rgba(22, 143, 110, .85);
+    border-top: 4px solid rgba(7, 7, 9, .85);
+}
+.s-button a
+{
+    border: 1px solid #070709;
+    color: #070709;
+}
+.infoObjectTabs
+{
+    border: 2px solid #070709;
+    color: #070709;
+}
+.infoObjectTabsActive
+{
+    border: 2px solid #168f6e;
+    background-color: #070709;
+    color: #168f6e;
+    -webkit-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
+}
+.infoObjTitleLink, .infoObjTitle
+{
+    color: #ffffff;
+}
+.infoSlider
+{
+    background-color: rgba(7, 7, 9, .75);
+}
+.infoSlider:hover
+{
+    background-color: rgba(7, 7, 9, .1);
+}
+.infoSlider > table td.titleCell
+{
+    color: #168f6e;
+    border-bottom: 3px solid #168f6e;
+}
+.infoSlider > table td.infoCell
+{
+    color: #168f6e;
+}
+.infoSlider:hover > table td.titleCell,
+.infoSlider:hover > table td.infoCell
+{
+    color: transparent;
+}
+.infoSlider:hover > table td.titleCell
+{
+    border-bottom-color: transparent;
+}
+.infoObjImgLink > img, .infoObjImg > img, .i_desc
+{
+    border: 2px solid #168f6e;
+}
+.table_desc th, .table_desc td
+{
+    border-color: #168f6e;
+}
+.table_desc th
+{
+    background-color: #168f6e;
+    color: #070709;
+}
+.infoObjDesc a
+{
+    color: #ffffff;
+}
+/*---------------------------------------------------tables.php-------------------------------------------------------*/
+
+.tCont
+{
+    background-color: transparent;
+}
+.grayBox
+{
+    color: rgba(7, 7, 9, .7);
+}
+.sortBtn
+{
+    border: 2px solid #168f6e;
+    color: #168f6e;
+}
+.sortBtn:hover
+{
+    background-color: rgba(22, 143, 110, 1);
+    color: #070709;
+    border-color: transparent;
+    box-shadow: inset 0 2px 0 rgba(7, 7, 9, .85), inset 0 2px 0 rgba(7, 7, 9, .85), inset 0 0 0 2px rgba(7, 7, 9, .85);
+}
+.sortOptions > label > div
+{
+    border: 2px solid #168f6e;
+}
+.sortOptions > label > div > div
+{
+    background-color: #168f6e;
+}
+.labelsForTabs
+{
+    color: #168f6e;
+    border: 1px solid #404040;
+}
+.labelsForTabs:not(:last-of-type)
+{
+    border-right: none;
+}
+.tablesTab
+{
+    color: #168f6e;
+}
+.allTabs:nth-of-type(1):checked + label:nth-of-type(1),
+.allTabs:nth-of-type(2):checked + label:nth-of-type(2),
+.allTabs:nth-of-type(3):checked + label:nth-of-type(3),
+.allTabs:nth-of-type(4):checked + label:nth-of-type(4),
+.allTabs:nth-of-type(5):checked + label:nth-of-type(5)
+{
+    background-color: rgba(22, 143, 110, 1);
+    color: #070709;
+}
+.sortTable td:not(:last-of-type)
+{
+    border-right: 1px solid #404040;
+}
+/*!*.sortTable td, .sortTable th*!.sortTable tr*/
+/*{*/
+    /*background-color: rgba(7, 7, 9, .85);*/
+/*}*/
+.sortTable a
+{
+    color: #ffffff;
+}
+.hiddenTable th
+{
+    background-color: rgba(7, 7, 9, 1);
+    border-bottom: 1px solid #168f6e;
+}
+/*---------------------------------------------------main.php--------------------------------------------------------*/
+
+.i-cont
+{
+    background-color: transparent;
+}
+.items
+{
+    -webkit-box-shadow: 7px 7px 0 0 rgba(5, 5, 10, .8);
+    -moz-box-shadow: 7px 7px 0 0 rgba(5, 5, 10, .8);
+    box-shadow: 7px 7px 0 0 rgba(5, 5, 10, .8);
+}
+.items:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.arrow, .i-item-info, .i-item-items, .i-i-item a
+{
+    color: #168f6e;
+}
+.i-information, .items
+{
+    border: 4px double transparent;
+}
+.i-item-info, .i-item-items
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+.itemImage
+{
+    border: 2px solid #168f6e;
+}

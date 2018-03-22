@@ -1,0 +1,535 @@
+/*-----------------------------------------------------Global---------------------------------------------------------*/
+
+body
+{
+    background: url('/newUniverse/images/space_alt.jpg') no-repeat fixed;
+    background-size: cover;
+}
+h3
+{
+    color: #ffff00;
+}
+h4, h5
+{
+    color: #ffff00;
+}
+q, blockquote
+{
+    border-left: 3px solid #ffff00;
+}
+.key_word
+{
+    color: #ffff00;
+}
+*::selection, *::-moz-selection
+{
+    color: rgba(10, 10, 10, 1);
+    background: rgba(255, 255, 255, 1);
+}
+.bg_color1
+{
+    background-color: rgba(4, 20, 33, .85);
+}
+.bg_color2
+{
+    background-color: rgba(4, 20, 33, 1);
+}
+.colorSwitcher
+{
+    border-color: #041421;
+}
+.colorSwitcher > div
+{
+    background-color: #041421;
+}
+.sField
+{
+    background-color: transparent;
+    border: 1px solid #c1c1c1;
+    color: #c1c1c1;
+}
+.sField:focus
+{
+    outline: none;
+}
+.sBtn
+{
+    background-color: #c1c1c1;
+    border-top: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    color: #041431;
+}
+.sRes
+{
+    background-color: #c1c1c1;
+}
+.sRes li
+{
+    border-color: #041431;
+}
+.sRes li a
+{
+    color: #041431;
+    text-decoration: none;
+}
+.sRes li a:hover
+{
+    color: #c1c1c1;
+    background-color: #041431;
+}
+.activeRes
+{
+    background-color: #ffff00;
+}
+.ukr, .eng
+{
+    border-color: #c1c1c1;
+}
+.langButton
+{
+    color: #c1c1c1;
+}
+.currentLang
+{
+    background-color: #c1c1c1;
+    color: #041431;
+}
+.t_upper, .t_m_title, .f_lower, .f_m_left
+{
+    background-color: rgba(4, 20, 49, 1);
+}
+.t_m_nav, .t_lower, .f_upper, .f_m_right
+{
+    background-color: rgba(193, 193, 193, 1);
+    color: #041431;
+}
+.t_m_title, .f_m_right
+{
+    border-bottom: 3px solid #ffff00;
+}
+.t_m_nav, .f_m_left
+{
+    border-top: 3px solid #ffff00;
+}
+.t_m_
+{
+    border-bottom: 50px solid rgba(193, 193, 193, 1);
+    border-left: 50px solid rgba(4, 20, 49, 1);
+}
+.f_m_
+{
+    border-top: 50px solid rgba(193, 193, 193, 1);
+    border-left: 50px solid rgba(4, 20, 49, 1);
+}
+.boxTitle
+{
+    background-color: rgba(0, 0, 0, 1);
+    color: #c1c1c1;
+    border: 2px solid #c1c1c1;
+}
+.titleBox, .t_m_title a, .f_m_left
+{
+    color: #c1c1c1;
+}
+.navigationList li a, .f_m_right a
+{
+    color: #041431;
+}
+.mainLink a:after
+{
+    background-color: #041431;
+}
+.radioB, .imageAndCaption > img
+{
+    border: 2px solid #c1c1c1;
+}
+.line2, .line3
+{
+    background-color: #c1c1c1;
+}
+.objectsButton
+{
+    color: #c1c1c1;
+}
+.objectsButton a
+{
+    color: #c1c1c1;
+}
+.imageAndCaption figcaption
+{
+    background-color: #c1c1c1;
+    color: #041431;
+}
+.fs1, .fs2
+{
+    border: 2px solid #041431;
+}
+.f_s1, .f_s2
+{
+    background-color: #041431;
+}
+.tBox, .tBox_
+{
+    border-bottom: 3px solid #ffff00;
+    color: #ffff00;
+}
+.hiddenNav, .hiddenNav2
+{
+    background-color: #c1c1c1;
+}
+.hiddenNav a, .hiddenNav2 a
+{
+    color: #041431;
+}
+.checkedStyle
+{
+    background-color: #c1c1c1;
+}
+#d
+{
+    right: 1px;
+}
+#a, #s
+{
+    right: 24px;
+}
+@media screen and (max-width: 800px)
+{
+    .hiddenNav
+    {
+        border-top: 3px solid #ffffff;
+    }
+}
+/*--------------------------------------------------object.php--------------------------------------------------------*/
+.o-cont
+{
+    background-color: transparent;
+}
+.sameTypeObjects, .abbreviationBox, .o_picture, .o_caption, .objectProp, .objectDesc,
+.objectObjects, .characteristicsBox
+{
+    color: #c1c1c1;
+    border: 4px double transparent;
+}
+.thisObjectTitle
+{
+    color: #ffff00;
+    border: 4px double transparent;
+}
+.minorObj a, .objProperties a
+{
+    color: #c1c1c1;
+}
+.minorObj a:hover, .minorObj:hover, .abbreviation, .minorObj a:focus
+{
+    color: #041431;
+}
+.abbreviation
+{
+    background-color: #c1c1c1;
+}
+.abbreviation
+{
+    border: 1px solid #c1c1c1;
+}
+.sTO_left, .sTO_right
+{
+    color: rgba(193, 193, 193, 1);
+}
+.sTO_left:hover, .sTO_right:hover
+{
+    background-color: rgba(193, 193, 193, .55);
+    color: rgba(255, 255, 255, 1);
+}
+.sTO_fake_radio
+{
+    border: 2px solid #c1c1c1;
+}
+.fr
+{
+    background-color: #c1c1c1;
+}
+.ch_title
+{
+    border: 1px solid #c1c1c1;
+    color: #c1c1c1;
+}
+.ch_title_active
+{
+    background-color: #c1c1c1;
+    color: #041431;
+    text-align: center;
+}
+.ch_title:hover
+{
+    border: 1px solid #ffff00;
+    /*padding-left: 55px;*/
+    color: #ffff00;
+}
+.ch_s_d
+{
+    border: 1px solid #c1c1c1;
+    /*border-left: 1px solid #c1c1c1;*/
+}
+.bodyStyleButton
+{
+    border: 1px solid #ffff00;
+    color: #ffff00;
+}
+.bodyStyleButton:hover
+{
+    background-color: #ffff00;
+    color: #041431;
+}
+.allProp td:nth-of-type(even)
+{
+    border-left: 1px solid #c1c1c1;
+}
+.allProp td:nth-of-type(odd)
+{
+    border-right: 1px solid #c1c1c1;
+}
+.o_img
+{
+    border: 2px solid #c1c1c1;
+}
+.otherObjImg:hover
+{
+    border-color: #c1c1c1;
+}
+/*------------------------------------------------information.php-----------------------------------------------------*/
+
+.iCont
+{
+    background-color: transparent;
+}
+.objectForm, .objectBox, .infoObjCaption, .c_desc
+{
+    background-color: #c1c1c1;
+    color: #041431;
+}
+.hiddenFontSelector
+{
+    background-color: #c1c1c1;
+    background: -moz-linear-gradient(left, #041421 10%, #c1c1c1 45%, #c1c1c1 55%, #041421 90%);
+    background: -webkit-linear-gradient(left, #041421 10%,#c1c1c1 45%,#c1c1c1 55%,#041421 90%);
+    background: linear-gradient(to right, #041421 10%,#c1c1c1 45%,#c1c1c1 55%,#041421 90%);
+}
+.s-button a:hover
+{
+    background-color: rgba(4, 20, 33, .85);
+}
+.infoObjHiddenBox
+{
+    background-color: rgba(4, 20, 33, 1);
+}
+.s-button a:hover, .infoObjInfo
+{
+    color: #c1c1c1;
+}
+.objectForm
+{
+    border-top: 2px solid #c1c1c1;
+    border-bottom: 2px solid #041431;
+}
+.s-img img
+{
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .8);
+    border: 2px solid #c1c1c1;
+}
+.s-inf
+{
+    border: 2px solid transparent;
+}
+.s-title
+{
+    border-bottom: 4px solid rgba(193, 193, 193, .85);
+    background-color: rgba(4, 20, 33, .85);
+    color: #c1c1c1;
+}
+.s-class
+{
+    border-color: #c1c1c1;
+}
+.s-button
+{
+    background-color: rgba(193, 193, 193, .85);
+    border-top: 4px solid rgba(4, 20, 33, .85);
+}
+.s-button a
+{
+    border: 1px solid #041431;
+    color: #041431;
+}
+.infoObjectTabs
+{
+    border: 2px solid #041431;
+    color: #041431;
+}
+.infoObjectTabsActive
+{
+    border: 2px solid #c1c1c1;
+    background-color: #041431;
+    color: #c1c1c1;
+    -webkit-box-shadow: 5px 5px 0 0 rgba(4, 20, 33, 1);
+    -moz-box-shadow: 5px 5px 0 0 rgba(4, 20, 33, 1);
+    box-shadow: 5px 5px 0 0 rgba(4, 20, 33, 1);
+}
+.infoObjTitleLink, .infoObjTitle
+{
+    color: #ffff00;
+}
+.infoSlider
+{
+    background-color: rgba(4, 20, 33, .75);
+}
+.infoSlider:hover
+{
+    background-color: rgba(4, 20, 33, .1);
+}
+.infoSlider > table td.titleCell
+{
+    color: #c1c1c1;
+    border-bottom: 3px solid #c1c1c1;
+}
+.infoSlider > table td.infoCell
+{
+    color: #c1c1c1;
+}
+.infoSlider:hover > table td.titleCell,
+.infoSlider:hover > table td.infoCell
+{
+    color: transparent;
+}
+.infoSlider:hover > table td.titleCell
+{
+    border-bottom-color: transparent;
+}
+.infoObjImgLink > img, .infoObjImg > img, .i_desc
+{
+    border: 2px solid #c1c1c1;
+}
+.infoObjDesc a
+{
+    color: #ffff00;
+}
+.table_desc th, .table_desc td
+{
+    border-color: #c1c1c1;
+}
+.table_desc th
+{
+    background-color: #c1c1c1;
+    color: #041431;
+}
+/*---------------------------------------------------tables.php-------------------------------------------------------*/
+
+.tCont
+{
+    background-color: transparent;
+}
+.grayBox
+{
+    color: rgba(4, 20, 33, .7);
+}
+.sortBtn
+{
+    border: 2px solid #c1c1c1;
+    color: #c1c1c1;
+}
+.sortBtn:hover
+{
+    background-color: rgba(193, 193, 193, 1);
+    color: #041431;
+    border-color: transparent;
+    box-shadow: inset 0 2px 0 rgba(4, 20, 33, .85), inset 0 2px 0 rgba(4, 20, 33, .85), inset 0 0 0 2px rgba(4, 20, 33, .85);
+}
+.sortOptions > label > div
+{
+    border: 2px solid #c1c1c1;
+}
+.sortOptions > label > div > div
+{
+    background-color: #c1c1c1;
+}
+.labelsForTabs
+{
+    color: #c1c1c1;
+    border: 1px solid #404040;
+}
+.labelsForTabs:not(:last-of-type)
+{
+    border-right: none;
+}
+.tablesTab
+{
+    color: #c1c1c1;
+}
+.allTabs:nth-of-type(1):checked + label:nth-of-type(1),
+.allTabs:nth-of-type(2):checked + label:nth-of-type(2),
+.allTabs:nth-of-type(3):checked + label:nth-of-type(3),
+.allTabs:nth-of-type(4):checked + label:nth-of-type(4),
+.allTabs:nth-of-type(5):checked + label:nth-of-type(5)
+{
+    background-color: rgba(193, 193, 193, 1);
+    color: #041431;
+}
+.sortTable td:not(:last-of-type)
+{
+    border-right: 1px solid #404040;
+}
+/*!*.sortTable td, .sortTable th*!.sortTable tr*/
+/*{*/
+    /*background-color: rgba(4, 20, 33, .85);*/
+/*}*/
+.sortTable a
+{
+    color: #ffff00;
+}
+.hiddenTable th
+{
+    background-color: rgba(4, 20, 49, 1);
+    border-bottom: 1px solid #c1c1c1;
+}
+/*---------------------------------------------------main.php--------------------------------------------------------*/
+
+.i-cont
+{
+    background-color: transparent;
+}
+.items
+{
+    -webkit-box-shadow: 10px 10px 0 0 rgba(4, 20, 33, .85);
+    -moz-box-shadow: 10px 10px 0 0 rgba(4, 20, 33, .85);
+    box-shadow: 10px 10px 0 0 rgba(4, 20, 33, .85);
+}
+.items:hover
+{
+    /*-webkit-transform: scale(1.1);*/
+    /*-moz-transform: scale(1.1);*/
+    /*-ms-transform: scale(1.1);*/
+    /*-o-transform: scale(1.1);*/
+    /*transform: scale(1.1);*/
+    -webkit-box-shadow: 0 0 0 0 rgba(4, 20, 33, .85);
+    -moz-box-shadow: 0 0 0 0 rgba(4, 20, 33, .85);
+    box-shadow: 0 0 0 0 rgba(4, 20, 33, .85);
+}
+.arrow, .i-item-info, .i-item-items, .i-i-item a
+{
+    color: #c1c1c1;
+}
+.i-information, .items
+{
+    border: 4px double transparent;
+}
+.i-item-info, .i-item-items
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+.itemImage
+{
+    border: 2px solid #c1c1c1;
+}

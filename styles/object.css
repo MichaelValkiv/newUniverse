@@ -1,0 +1,366 @@
+.o-cont
+{
+    overflow: hidden;
+}
+.tBox
+{
+    position: relative;
+}
+.bodyStyleButton
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 1px 3px;
+    cursor: pointer;
+}
+.objectsButton
+{
+    visibility: hidden;
+}
+#navShowBtn, #navCloseBtn
+{
+    visibility: visible;
+}
+.thisObjectTitle
+{
+    width: 100%;
+    font-size: 48px;
+    font-family: EuroFont;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    margin: 15px 0 15px -100%;
+}
+.sameTypeObjects
+{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 28px;
+    position: relative;
+}
+.sTO
+{
+    width: 300%;
+    overflow: hidden;
+}
+.sTO_left, .sTO_right
+{
+    width: 50px;
+    position: absolute;
+    font-family: MSGothic;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sTO_left
+{
+    top: 0;
+    bottom: 25px;
+    left: 3px;
+}
+.sTO_right
+{
+    top: 0;
+    bottom: 25px;
+    right: 3px;
+}
+.sTO_radio
+{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 2px;
+}
+.sTO_radio > input
+{
+    display: none;
+}
+.sTO_fake_radio
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.fr
+{
+    width: 9px;
+    height: 9px;
+}
+.fr1
+{
+    opacity: 1;
+}
+.fr2, .fr3
+{
+    opacity: 0;
+}
+.otherObjImage
+{
+    width: 6.66666666667%;
+    float: left;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.otherObjImg
+{
+    border: 2px solid transparent;
+}
+.otherObjImage img
+{
+    display: block;
+}
+.objInfo
+{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*border: 1px solid red;*/
+    font-family: Prime, Play;
+    text-align: justify;
+}
+.object_i_p
+{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+.objectImage, .objectProp
+{
+    width: 50%;
+}
+.objectImage
+{
+    margin-right: 15px;
+}
+.o_picture
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.o_picture > img
+{
+    display: block;
+}
+.o_caption
+{
+    text-align: right;
+    padding: 10px;
+}
+.objectProp
+{
+    padding: 10px;
+}
+.allProp
+{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+    height: 100%;
+}
+.allProp tr
+{
+    margin-bottom: 5px;
+}
+.allProp td
+{
+    vertical-align: middle;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.allProp td:nth-of-type(odd)
+{
+    width: 12%;
+    text-align: right;
+    font-weight: bold;
+}
+.allProp td:nth-of-type(even)
+{
+    width: 21.33333%;
+    text-align: left;
+}
+.objectObjects
+{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.minorObj
+{
+    width: calc(12.5% - 4px);
+    /*float: left;*/
+    text-align: center;
+    cursor: default;
+    margin: 2px;
+}
+.minorObj a
+{
+    display: block;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    border: 1px solid #008000;
+}
+.minorObj span
+{
+    display: block;
+    padding: 10px 0 10px 0;
+    position: relative;
+    border: 1px solid #ff0000;
+}
+.minorObj b
+{
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.minorObj a:hover:after, .minorObj span:hover:after
+{
+    width: 0;
+}
+.minorObj a:hover, .minorObj a:focus
+{
+    background: #0e4900;
+    background: -moz-linear-gradient(top, #0e4900 0%, #199e2d 50%, #0e4900 100%);
+    background: -webkit-linear-gradient(top, #0e4900 0%,#199e2d 50%,#0e4900 100%);
+    background: linear-gradient(to bottom, #0e4900 0%,#199e2d 50%,#0e4900 100%);
+}
+.minorObj:hover
+{
+    background: #c10000;
+    background: -moz-linear-gradient(top, #c10000 0%, #f75d27 50%, #c10000 100%);
+    background: -webkit-linear-gradient(top, #c10000 0%,#f75d27 50%,#c10000 100%);
+    background: linear-gradient(to bottom, #c10000 0%,#f75d27 50%,#c10000 100%);
+}
+.objectDesc
+{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.ch_ab
+{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+.abbreviationBox
+{
+    width: 50%;
+    height: 100vh;
+    /*border: 1px solid yellow;*/
+    padding: 10px;
+    font-family: Prime, Play;
+    font-size: 20px;
+}
+.characteristicsBox
+{
+    width: 50%;
+    height: 100vh;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: Prime, Play;
+    font-size: 20px;
+    overflow: hidden;
+}
+.characteristics
+{
+    height: calc(100% - 50px);
+    overflow: auto;
+    /*border: 1px solid yellow;*/
+}
+.ch_title
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.ch_s_d
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    display: none;
+}
+.abbreviation
+{
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+    /*font-style: italic;*/
+    text-align: center;
+    padding: 5px;
+}
+.otherObjImg
+{
+    width: 100%;
+}
+@media screen and (max-width: 1600px)
+{
+    .allProp td
+    {
+        font-size: 14px;
+    }
+    .sTO_left, .sTO_right
+    {
+        width: 40px;
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .object_i_p
+    {
+        display: block;
+    }
+    .objectImage, .objectProp
+    {
+        width: 100%;
+    }
+    .o_caption
+    {
+        margin-bottom: 15px;
+    }
+    .sTO_left, .sTO_right
+    {
+        width: 30px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 1280px)
+{
+    .ch_ab
+    {
+        display: block;
+    }
+    .characteristicsBox, .abbreviationBox
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .bodyStyleButton
+    {
+        display: none;
+    }
+    .sTO_left, .sTO_right
+    {
+        width: 20px;
+        font-size: 18px;
+    }
+}
