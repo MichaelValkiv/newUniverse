@@ -5,4 +5,4 @@ if (mysqli_connect_errno())
     echo "ERROR!".mysqli_connect_error();
 }
 mysqli_query($dbQuery, "SET NAMES utf8");
-
+?>
